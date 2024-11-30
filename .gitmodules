@@ -1,0 +1,3 @@
+[submodule "LoginApp-CI-CD"]
+	path = LoginApp-CI-CD
+	url = https://github.com/msandhuz/LoginApp-CI-CD.git
