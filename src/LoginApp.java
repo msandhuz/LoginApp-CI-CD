@@ -12,7 +12,7 @@ public class LoginApp extends JFrame {
     private JPasswordField passwordField;
     private static final String DB_URL = "jdbc:mysql://localhost:3306/softwaretesting";
     private static final String DB_USER = "root";
-    private static final String DB_PASSWORD = "12345678";
+    private static final String DB_PASSWORD = "Zainab123!";
 
     public LoginApp() {
         System.out.println("Testing CI/CD");
