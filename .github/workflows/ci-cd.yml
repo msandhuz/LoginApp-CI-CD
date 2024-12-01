@@ -30,6 +30,6 @@ jobs:
       - name: Compile the application
         run: javac -d out $(find . -name "*.java")
 
-      # Step 4: Run tests (adjust based on your tests)
+      # Step 4: Run Tests (adjust based on your tests)
       - name: Run Tests
         run: java -cp out org.junit.runner.JUnitCore TestLoginApp
