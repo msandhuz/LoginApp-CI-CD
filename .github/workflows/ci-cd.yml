@@ -26,10 +26,10 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      # Step 3: Compile the code
+      # Step 3: Compile the application with dependencies
       - name: Compile the application
-        run: javac -d out $(find . -name "*.java")
+        run: javac -cp "libs/junit-4.13.2.jar:libs/hamcrest-core-1.3.jar:libs/mysql-connector-j-9.1.0.jar:libs/mockito-core-5.14.2.jar" -d out $(find . -name "*.java")
 
-      # Step 4: Run tests (adjust based on your tests)
+      # Step 4: Run Tests with dependencies
       - name: Run Tests
-        run: java -cp out org.junit.runner.JUnitCore TestLoginApp
+        run: java -cp "out:libs/junit-4.13.2.jar:libs/hamcrest-core-1.3.jar:libs/mysql-connector-j-9.1.0.jar:libs/mockito-core-5.14.2.jar" org.junit.runner.JUnitCore TestLoginApp
