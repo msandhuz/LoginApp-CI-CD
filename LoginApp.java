@@ -1,1 +1,1 @@
-System.out.println('Testing CI pipeline');
+System.out.println("Testing CI pipeline');
